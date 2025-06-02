@@ -25,15 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="">
+    <html lang="en" className="dark">
+      <body className="dark:bg-black">
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
-
-      
       </body>
     </html>
   );
